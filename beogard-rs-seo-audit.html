@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="sr-Latn-RS" data-scheme="signal" data-state="final">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>beogard.rs — SEO provera i predlog saradnje</title>
+<meta name="description" content="Provera sajta beogard.rs, uporedba sa konkurencijom i plan rada za 400 € mesečno.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ===== КАНОНИЧЕСКИЙ БЛОК. Не править под конкретный документ. ===== */
+
+/* --- схема 1: signal — техника, охрана, авто, стройка --- */
+:root,[data-scheme="signal"]{
+  --ink:#0E1726; --panel:#16233A; --panel-2:#1E2E49;
+  --paper:#F1F3F7; --card:#FFFFFF; --line:#D4DAE4;
+  --text:#1A2334; --steel:#64748B;
+  --accent:#FFB020; --accent-ink:#8A5A00;
+  --on-accent:#241A02; --on-accent-line:rgba(36,26,2,.17);
+  --accent-tint:rgba(255,176,32,.09); --accent-glow:rgba(255,176,32,.15);
+  --hero-text:#EAEFF6; --hero-body:#C3CFDE; --hero-muted:#8DA0BC;
+  --hero-led-off:#2B3B55; --hero-line:rgba(255,255,255,.09);
+  --alarm:#DC4438; --alarm-soft:#FF8A80; --alarm-glow:rgba(220,68,56,.17);
+  --armed:#1F9D6B;
+}
+/* --- схема 2: nega — медицина, уход, психология --- */
+[data-scheme="nega"]{
+  --ink:#0F2A2B; --panel:#16393A; --panel-2:#1E4A4A;
+  --paper:#F0F4F3; --card:#FFFFFF; --line:#D2DEDC;
+  --text:#16292A; --steel:#5F7574;
+  --accent:#8FD6C4; --accent-ink:#1F6B5C;
+  --on-accent:#0B2A26; --on-accent-line:rgba(11,42,38,.18);
+  --accent-tint:rgba(143,214,196,.16); --accent-glow:rgba(143,214,196,.22);
+  --hero-text:#E8F2F0; --hero-body:#BDD2CF; --hero-muted:#8AAAA8;
+  --hero-led-off:#2B4D4C; --hero-line:rgba(255,255,255,.09);
+  --alarm:#D4544A; --alarm-soft:#FF9A90; --alarm-glow:rgba(212,84,74,.18);
+  --armed:#2E9B7E;
+}
+/* --- схема 3: kamen — недвижимость, материалы, столярия --- */
+[data-scheme="kamen"]{
+  --ink:#241F1A; --panel:#332B23; --panel-2:#42382D;
+  --paper:#F1F0EE; --card:#FFFFFF; --line:#DCD6CB;
+  --text:#241F1A; --steel:#6E655A;
+  --accent:#D8B45F; --accent-ink:#7A5A12;
+  --on-accent:#241B06; --on-accent-line:rgba(36,27,6,.18);
+  --accent-tint:rgba(216,180,95,.13); --accent-glow:rgba(216,180,95,.18);
+  --hero-text:#F2EDE5; --hero-body:#CFC6BA; --hero-muted:#A2968A;
+  --hero-led-off:#4A4035; --hero-line:rgba(255,255,255,.09);
+  --alarm:#C8503F; --alarm-soft:#F2907E; --alarm-glow:rgba(200,80,63,.18);
+  --armed:#4A8A5C;
+}
+:root{
+  --display:'Archivo',system-ui,sans-serif;
+  --body:'IBM Plex Sans',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1020px;margin:0 auto;padding:0 16px}
+p{margin:0 0 1em;max-width:66ch}
+h1,h2,h3,h4{font-family:var(--display);margin:0;letter-spacing:-.018em;line-height:1.1}
+a{color:var(--text)}
+strong{font-weight:600}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+/* ---------- режим черновика ---------- */
+.ph{background:var(--accent-glow);box-shadow:0 0 0 2px var(--accent-glow);border-radius:2px}
+[data-state="final"] .ph{background:none;box-shadow:none}
+.draftbar{background:var(--alarm);color:#fff;padding:18px 0;font-size:15px}
+.draftbar .wrap{display:flex;flex-wrap:wrap;gap:6px 24px;align-items:baseline}
+.draftbar b{font-family:var(--display);font-size:16px}
+.draftbar ul{margin:0;padding-left:18px;columns:2;column-gap:32px;max-width:760px}
+.draftbar li{margin-bottom:3px}
+[data-state="final"] .draftbar{display:none}
+@media(max-width:700px){.draftbar ul{columns:1}}
+
+/* ---------- hero ---------- */
+.hero{background:var(--ink);color:var(--hero-text);padding:56px 0 0;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 42px),
+             repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 1px,transparent 1px 42px);
+  mask-image:linear-gradient(170deg,#000 0%,transparent 72%);
+  -webkit-mask-image:linear-gradient(170deg,#000 0%,transparent 72%)}
+.hero .wrap{position:relative}
+.stamp{font-family:var(--mono);font-size:12.5px;color:var(--hero-muted);margin:0 0 30px}
+.stamp b{color:var(--accent);font-weight:500}
+.hero h1{font-size:clamp(31px,6.2vw,56px);font-weight:700;color:#fff;max-width:19ch}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.dom{font-family:var(--mono);font-size:15px;color:var(--hero-muted);margin:14px 0 0}
+.lede{margin:26px 0 0;font-size:18.5px;color:var(--hero-body);max-width:62ch}
+.readout{margin:40px 0 0;border-top:1px solid rgba(255,255,255,.14)}
+.ro{display:grid;grid-template-columns:14px 1fr auto;gap:0 16px;align-items:center;padding:13px 0;border-bottom:1px solid var(--hero-line)}
+.led{width:9px;height:9px;border-radius:50%;background:var(--hero-led-off);justify-self:center}
+.ro-l{font-size:15.5px;color:var(--hero-body)}
+.ro-v{font-family:var(--mono);font-size:20px;font-weight:500;color:#fff;font-variant-numeric:tabular-nums}
+.ro-v small{font-size:13px;color:var(--hero-muted);font-weight:400;margin-left:6px}
+.ro[data-s="red"] .led{background:var(--alarm);box-shadow:0 0 0 4px var(--alarm-glow)}
+.ro[data-s="amb"] .led{background:var(--accent);box-shadow:0 0 0 4px var(--accent-glow)}
+.ro[data-s="ok"] .led{background:var(--armed);box-shadow:0 0 0 4px rgba(31,157,107,.17)}
+.ro[data-s="red"] .ro-v{color:var(--alarm-soft)}
+@media(prefers-reduced-motion:no-preference){
+  .ro .led{animation:selftest .5s ease-out both}
+  .ro:nth-child(1) .led{animation-delay:.25s}
+  .ro:nth-child(2) .led{animation-delay:.40s}
+  .ro:nth-child(3) .led{animation-delay:.55s}
+  .ro:nth-child(4) .led{animation-delay:.70s}
+  .ro:nth-child(5) .led{animation-delay:.85s}
+  .ro:nth-child(6) .led{animation-delay:1.00s}
+  @keyframes selftest{0%{opacity:0;transform:scale(.4)}55%{opacity:1;transform:scale(1.5)}100%{opacity:1;transform:scale(1)}}
+}
+.hero-foot{padding:34px 0 46px}
+.hero-foot p{color:var(--hero-muted);font-size:14.5px;margin:0;max-width:72ch}
+
+/* ---------- rezime ---------- */
+.summary{background:var(--accent);color:var(--on-accent);padding:46px 0}
+.summary h2{font-size:clamp(23px,3.6vw,30px);font-weight:700;margin-bottom:22px}
+.summary ul{margin:0;padding:0;list-style:none;max-width:78ch}
+.summary li{padding:13px 0;border-top:1px solid var(--on-accent-line);font-size:17px}
+.summary li:last-child{border-bottom:1px solid var(--on-accent-line)}
+.summary li b{font-weight:600}
+
+/* ---------- секции ---------- */
+section{padding:54px 0}
+section + section{border-top:1px solid var(--line)}
+.sec-h{margin-bottom:26px}
+.sec-n{font-family:var(--mono);font-size:13px;color:var(--steel);display:block;margin-bottom:9px}
+.sec-h h2{font-size:clamp(25px,4vw,34px);font-weight:700}
+.sec-h .sub{margin:12px 0 0;color:var(--steel);font-size:17px;max-width:64ch}
+.h-run{font-size:19px;font-weight:600;margin:30px 0 12px}
+
+.find{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--steel);padding:20px 22px;margin:0 0 12px}
+.find.crit{border-left-color:var(--alarm)}
+.find.ok{border-left-color:var(--armed)}
+.find h3{font-size:19px;font-weight:600;margin-bottom:8px}
+.find p{margin:0;color:var(--text);opacity:.86;font-size:16.5px}
+.find p + p{margin-top:.7em}
+.code{font-family:var(--mono);font-size:12px;color:var(--steel);background:var(--paper);border:1px solid var(--line);padding:2px 7px;display:inline-block;margin:11px 6px 0 0}
+.when-chip{font-family:var(--display);font-size:13px;font-weight:600;color:var(--accent-ink);background:var(--accent-tint);padding:4px 10px;display:inline-block;margin-top:12px}
+
+.spam{background:var(--panel);color:var(--hero-body);padding:26px 24px;margin:22px 0}
+.spam h4{font-size:15px;font-weight:600;color:#fff;margin-bottom:14px}
+.spam ol{margin:0;padding-left:0;list-style:none;font-family:var(--mono);font-size:14px;line-height:1.95}
+.spam ol li{color:var(--hero-muted);overflow-wrap:anywhere}
+.spam ol li b{color:var(--accent);font-weight:400}
+.spam .note{margin:18px 0 0;font-family:var(--body);font-size:15px;color:var(--hero-muted);max-width:64ch}
+
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 14px}
+table{border-collapse:collapse;width:100%;min-width:620px;background:var(--card);font-size:15.5px}
+caption{text-align:left;font-family:var(--display);font-weight:600;font-size:15px;padding:0 0 10px;color:var(--text)}
+caption span{font-weight:400;color:var(--steel);font-family:var(--body);font-size:14px}
+th,td{padding:11px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+thead th{background:var(--panel);color:#fff;font-family:var(--display);font-weight:600;font-size:14px;border-bottom:none}
+thead th.us{background:var(--panel-2);color:var(--accent)}
+tbody th{font-weight:500;color:var(--text);opacity:.85;width:27%}
+td.n{font-family:var(--mono);font-variant-numeric:tabular-nums}
+td.us{background:var(--accent-tint);font-weight:500}
+td.bad{color:var(--alarm)}
+td.good{color:var(--armed)}
+.t-note{font-size:14px;color:var(--steel);margin:0;max-width:66ch}
+
+.inc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:0 0 20px}
+@media(max-width:640px){.inc{grid-template-columns:1fr}}
+.inc > div{background:var(--card);padding:20px}
+.inc h4{font-size:16px;font-weight:600;margin-bottom:10px}
+.inc ul{margin:0;padding-left:18px;font-size:15.5px;color:var(--text);opacity:.86}
+.inc li{margin-bottom:6px}
+
+.pan{background:var(--ink);color:var(--hero-body);padding:38px 32px;margin:0 0 20px}
+.pan h3{color:#fff;font-size:22px;font-weight:600;margin-bottom:14px}
+.pan p{color:var(--hero-body);max-width:62ch}
+.pan p:last-child{margin-bottom:0}
+.pan .big{font-family:var(--display);font-size:clamp(34px,6vw,52px);font-weight:700;color:var(--accent);line-height:1;letter-spacing:-.03em}
+.pan .big small{display:block;font-family:var(--body);font-size:15px;font-weight:400;color:var(--hero-muted);letter-spacing:0;margin-top:10px}
+
+.plan{counter-reset:p;margin:8px 0 0;padding:0;list-style:none}
+.plan li{counter-increment:p;position:relative;padding:0 0 26px 62px;border-left:1px solid var(--line);margin-left:16px}
+.plan li:last-child{border-left-color:transparent;padding-bottom:0}
+.plan li:before{content:counter(p);position:absolute;left:-16px;top:0;width:32px;height:32px;background:var(--ink);color:#fff;font-family:var(--mono);font-size:14px;display:flex;align-items:center;justify-content:center;border-radius:2px}
+.plan h3{font-size:18.5px;font-weight:600;margin-bottom:6px}
+.plan .when{font-family:var(--mono);font-size:12.5px;color:var(--accent-ink);display:block;margin-bottom:7px}
+.plan p{margin:0;color:var(--text);opacity:.86;font-size:16px}
+
+.terms{margin:0;padding:0;list-style:none;max-width:72ch}
+.terms li{padding:14px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:200px 1fr;gap:4px 22px;font-size:16px}
+.terms li:first-child{border-top:1px solid var(--line)}
+.terms b{font-family:var(--display);font-weight:600;font-size:15px}
+.terms span{color:var(--text);opacity:.86}
+
+.cta{background:var(--ink);color:#fff;padding:56px 0}
+.cta h2{font-size:clamp(25px,4.4vw,38px);font-weight:700;max-width:24ch}
+.cta p{color:var(--hero-body);margin-top:16px}
+.cta .need{background:rgba(255,255,255,.055);border-left:3px solid var(--accent);padding:18px 20px;margin:26px 0 30px;max-width:62ch}
+.cta .need p{margin:0;color:var(--hero-body);font-size:16px}
+.contacts{display:flex;flex-wrap:wrap;gap:10px 28px;font-family:var(--mono);font-size:15.5px;margin-top:4px}
+.contacts a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-glow)}
+.contacts a:hover{border-bottom-color:var(--accent)}
+
+footer{background:var(--panel);color:var(--hero-muted);padding:34px 0;font-size:14px}
+footer p{max-width:74ch;margin:0 0 .7em}
+footer b{color:var(--hero-body);font-weight:500}
+
+a:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+@media(max-width:620px){
+  body{font-size:16px}
+  .ro{grid-template-columns:14px 1fr;gap:0 12px;padding:11px 0}
+  .ro-v{grid-column:2;font-size:17px}
+  .terms li{grid-template-columns:1fr}
+  .pan{padding:28px 20px}
+  section{padding:40px 0}
+}
+@media print{
+  body{background:#fff;font-size:11pt}
+  .draftbar{display:none}
+  .hero,.cta,.pan,.spam,thead th,.summary,footer{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .hero:before{display:none}
+  section{padding:18pt 0;break-inside:avoid}
+  .find,.plan li,table,.inc > div{break-inside:avoid}
+  .tw{overflow:visible}
+  table{min-width:0}
+}
+/* ===== конец канонического блока ===== */
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="stamp">SEO provera sajta — <b>2. novembar 2026</b></p>
+    <h1>1.461 od 1.491 stranice vašeg sajta je <em>spam</em></h1>
+    <p class="dom">beogard.rs — Beogard Security, Zemun</p>
+    <p class="lede">Prošli smo kompletan sajt, profil linkova i četiri konkurentska sajta iz Beograda. Ovo je nalaz, zatim šta to znači u novcu i šta radimo prvih dvanaest meseci za 400 € mesečno, sa svim izmenama na sajtu uključenim u tu cenu.</p>
+
+    <div class="readout">
+      <div class="ro" data-s="amb"><span class="led"></span><span class="ro-l">Stranica u indeksu</span><span class="ro-v">1.491</span></div>
+      <div class="ro" data-s="red"><span class="led"></span><span class="ro-l">Od toga spam stranica</span><span class="ro-v">1.461 <small>98%</small></span></div>
+      <div class="ro" data-s="amb"><span class="led"></span><span class="ro-l">Pravih stranica o firmi i uslugama</span><span class="ro-v">30</span></div>
+      <div class="ro" data-s="red"><span class="led"></span><span class="ro-l">Tuđih domena koja linkuju na sajt</span><span class="ro-v">492</span></div>
+      <div class="ro" data-s="red"><span class="led"></span><span class="ro-l">Domain Rating, Ahrefs skala 0–100</span><span class="ro-v">0,6</span></div>
+      <div class="ro" data-s="red"><span class="led"></span><span class="ro-l">Stranica bez meta opisa</span><span class="ro-v">1.491</span></div>
+    </div>
+  </div>
+  <div class="wrap hero-foot">
+    <p>Izvori brojeva: obilaženje sajta 2. novembra 2026 (1.491 URL), Ahrefs profil linkova, ručna provera stranica usluga i četiri konkurentska sajta.</p>
+  </div>
+</header>
+
+<section class="summary">
+  <div class="wrap">
+    <h2>Rezime, ako nemate vremena za ostalo</h2>
+    <ul>
+      <li>Sajt ima <b>1.491 stranicu</b>. Samo <b>30</b> govori o Beogardu i uslugama. Ostalih <b>1.461</b> su objavljene poruke i komentari sa sajta — reklame za „finansijske robote“, sajtove za upoznavanje i prodaju linkova.</li>
+      <li>Svih 1.461 je <b>u vašem sitemap fajlu</b>. Sajt te stranice sam prijavljuje Google-u svaki dan.</li>
+      <li><b>492 tuđa domena</b> linkuju na beogard.rs sa tekstovima tipa „Buy Backlinks Online Cheap“. Niste ih zvali ni platili. Google ih ipak vidi.</li>
+      <li>Prave stranice su dobro podeljene po uslugama — to je najveća prednost koju imate. Ali su kratke: <b>181 reč u srednjem slučaju</b>, a stranice usluga oko 120. Konkurencija ima 400 do 1.200.</li>
+      <li>Nijedna stranica <b>nema meta opis</b>. <b>479</b> ima isti naslov kao neka druga stranica na sajtu.</li>
+      <li>Predlog: <b>400 € mesečno</b>, sve izmene na sajtu i svi tekstovi uključeni, bez ugovora na period. Prvi mesec je čišćenje.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="sec-n">01</span>
+      <h2>Šta već imate i ne diramo</h2>
+      <p class="sub">Počinjemo od ovoga, jer se na tome gradi. Ništa od navedenog ne treba kupovati ni praviti iznova.</p>
+    </div>
+
+    <div class="find ok">
+      <h3>Struktura usluga je šira od konkurentske</h3>
+      <p>Imate 14 odvojenih stranica: alarmni sistemi, alarmi za objekte, auto alarmi, video nadzor, interfoni, video interfoni, automatizacija kapija, klizne kapije, protivpožarni sistemi, kontrola pristupa, kontrola radnog vremena, razglasni sistemi, GPS sistemi, za instalatere. AdAstra Security, koji je danas najbolje postavljen od vaših konkurenata, ima pet. Skelet za koji drugi plaćaju izradu sajta kod vas već postoji — samo su stranice prazne.</p>
+    </div>
+
+    <div class="find ok">
+      <h3>Od 2003. i pet stručnih licenci</h3>
+      <p>Dvadeset tri godine rada i svih pet sertifikata iz oblasti FTO. Ni jedan od četiri proverena konkurenta ne navodi licence. Ovo je argument koji Google ceni, a koji klijent koji bira firmu za alarm na kući ceni još više. Sada stoji u jednom pasusu na stranici „O nama“ i nigde više.</p>
+    </div>
+
+    <div class="find ok">
+      <h3>Tehnička uputstva koja nijedan konkurent nema</h3>
+      <p>Na sajtu su korisničko i instalatersko uputstvo za Paradox MG 5000 i program za Dahua DVR snimače. Ljudi te stvari traže na Google-u svaki dan — i majstori i korisnici koji su zaboravili šifru centrale. To je gotov materijal za sekciju koja dovodi saobraćaj besplatno, a koju konkurencija ne može da napravi jer ne zna opremu kao vi.</p>
+    </div>
+
+    <div class="find ok">
+      <h3>Dokazi rada su već na sajtu</h3>
+      <p>Stranice Reference, Foto i Video postoje, a Foto je najdublja stranica na sajtu po količini teksta. Treba ih samo povezati sa stranicama usluga i opisati — fotografija bez teksta Google-u ne govori ništa.</p>
+    </div>
+
+    <div class="find ok">
+      <h3>Tehnička osnova je čista</h3>
+      <p>Sve stranice vraćaju kod 200, sajt radi na HTTPS-u, adrese su kratke i na srpskom latinicom. Nema prebačaja, nema slomljenih linkova, nema duplikata zbog http i https verzije. Domen je star i to je prednost — čim spam ode.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="sec-n">02</span>
+      <h2>Glavni nalaz: spam je pojeo sajt</h2>
+      <p class="sub">Ovo je jedina stvar koja se mora rešiti prvo. Dok ona stoji, sve ostalo je bacanje para.</p>
+    </div>
+
+    <p>Svaka poruka poslata kroz sajt i svaki komentar dobijaju svoju javnu stranicu sa sopstvenom adresom. Naslov takve stranice je „Beogard Security“ pa tekst poruke. Spam botovi su to pronašli i godinama šalju poruke — a sajt ih poslušno objavljuje i prijavljuje Google-u.</p>
+
+    <div class="spam">
+      <h4>Stvarni naslovi stranica sa beogard.rs</h4>
+      <ol>
+        <li>Beogard Security <b>„Attention! Financial robot may bring you millions!“</b></li>
+        <li>Beogard Security <b>„Unmarried girls are ready to meet close to you“</b></li>
+        <li>Beogard Security <b>„Still not a millionaire? Fix it now!“</b></li>
+        <li>Beogard Security <b>„Start making thousands of dollars every week just using this robot.“</b></li>
+        <li>Beogard Security <b>„I promised.“</b> — 43 različite stranice sa istim naslovom</li>
+      </ol>
+      <p class="note">Među njima su i poruke koje liče na prave: „Proba ove forme sa sajta.“ i „Novi Daljinski za el.magn bravu na vratima“. Ako je to zaista pitanje klijenta, ono je javno i Google ga je indeksirao. To je drugi, odvojen problem od SEO-a, i zatvara se istom izmenom.</p>
+    </div>
+
+    <h3 class="h-run">Zašto je to gore nego što zvuči</h3>
+    <p>Google ne ocenjuje stranice pojedinačno, nego i sajt u celini. Za njega je beogard.rs sajt na kome je 98% sadržaja spam na engleskom i ruskom, o kreditima i upoznavanju, a 2% je nešto o alarmima u Beogradu. Nijedan algoritam takav sajt ne stavlja ispred konkurenta koji ima pedeset čistih stranica.</p>
+    <p>Druga strana: unutrašnja snaga sajta ide na spam. Od 148.555 unutrašnjih linkova na sajtu, <strong>147.054 polazi sa spam stranica</strong>. Stranice vaših usluga su okružene porukama o finansijskim robotima, i to je kontekst u kome ih Google čita.</p>
+
+    <div class="find crit">
+      <h3>Sajt sam prijavljuje spam Google-u</h3>
+      <p>U sitemap.xml fajlu je svih 1.491 stranica, od toga 1.461 spam. Sitemap je spisak koji sajt šalje Google-u sa rečima „ovo su moje važne stranice, dođi i pogledaj“.</p>
+    </div>
+
+    <div class="find crit">
+      <h3>Šta radimo s tim</h3>
+      <p>Prvi mesec: zatvaramo objavljivanje poruka i komentara kao javnih stranica, brišemo svih 1.461 uz pravilno preusmerenje, čistimo bazu, podnosimo novi sitemap i tražimo ponovno obilaženje. Posle toga u indeksu ostaje 30 stranica — i tek tada se vidi prava slika sajta.</p>
+      <p>Ovo je izmena u WordPressu i u bazi. Ulazi u cenu od 400 €, ne dobijate poseban račun za programera.</p>
+      <span class="when-chip">Posao prve dve nedelje</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="sec-n">03</span>
+      <h2>Još četiri kritične stvari</h2>
+      <p class="sub">Namerno četiri. Lista od trideset problema zvuči strašno i ne pomaže da se odlučite — ovo su one koje stvarno drže sajt na mestu.</p>
+    </div>
+
+    <div class="find crit">
+      <h3>Stranice usluga su prekratke da bi mogle da rangiraju</h3>
+      <p>Alarmni sistemi — 125 reči. Interfoni — 123. Automatizacija kapija — 124. Kontrola pristupa — 120. Razglasni sistemi — 120. To je dužina jednog pasusa. Na stranici nema cena, nema opreme koju ugrađujete, nema tipova objekata, nema roka izlaska, nema garancije, nema ni jednog pitanja koje klijent zaista postavlja.</p>
+      <p>Konkurenti na istim temama imaju 400 do 1.200 reči sa brendovima, paketima i garancijama. Google bira između dve ponude, i vaša je kraća.</p>
+      <span class="code">THIN_CONTENT — 1.444 stranice</span>
+    </div>
+
+    <div class="find crit">
+      <h3>Nijedna stranica nema meta opis</h3>
+      <p>Meta opis je dva reda teksta ispod naslova u Google rezultatima. Kod vas ga nema ni na jednoj od 1.491 stranice, pa Google sam izvlači nasumičan tekst sa stranice. Uz to: 479 stranica ima isti naslov kao neka druga, a 738 ima naslov predugačak da bi se prikazao do kraja. Naslov stranice „O nama“ ima 180 znakova — vidi se oko 60.</p>
+      <span class="code">DESCRIPTION_MISSING — 1.491</span><span class="code">TITLE_DUPLICATE — 479</span><span class="code">TITLE_TOO_LONG — 738</span>
+    </div>
+
+    <div class="find crit">
+      <h3>Sajt odgovara sporo</h3>
+      <p>Spor odgovor servera zabeležen je na 1.489 od 1.491 stranice. Deo toga je baza natovarena sa 1.461 nepotrebnom stranicom i stotinama hiljada unutrašnjih linkova — pa se posle čišćenja popravi sam. Ostatak je hosting i keš, i to rešavamo u prvom mesecu.</p>
+      <span class="code">SLOW_RESPONSE — 1.489 stranica</span>
+    </div>
+
+    <div class="find crit">
+      <h3>Klijent ne može da nađe osnovne podatke</h3>
+      <p>Na stranici Kontakt su ime, telefon i mejl. Nema adrese, nema radnog vremena, nema mape, nema podataka firme. Cenovnik je PDF koji se skida — Google ga teško čita, a klijent sa telefona uglavnom ne otvara. Na sajtu nema ni jedne izjave klijenta ni ocene.</p>
+      <p>Spartan sistemi pišu orijentacione cene direktno na sajtu, imaju devet pitanja i odgovora i navode garanciju. AdAstra piše 1.000+ ugradnji, odziv za 2 sata i garanciju 24 meseca. Vi imate dvadeset tri godine rada i pet licenci, a na sajtu to ne stoji nigde gde se vidi.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="sec-n">04</span>
+      <h2>Higijena — radi se u hodu, ne naplaćuje se posebno</h2>
+      <p class="sub">Ovo nisu razlozi zašto sajt ne rangira. Navodimo ih da znate da smo ih videli i da su u planu.</p>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Stvar</th><th>Obim</th><th>Kada</th></tr></thead>
+        <tbody>
+          <tr><td>Slike bez alt opisa</td><td class="n">1.568 slika</td><td>uz prepravku stranica</td></tr>
+          <tr><td>Nema Open Graph oznaka — link bez slike kad se deli na Viberu i Facebooku</td><td class="n">1.491 stranica</td><td>mesec 1</td></tr>
+          <tr><td>Nema security headers zaglavlja</td><td class="n">1.491 stranica</td><td>mesec 1, nije SEO nego bezbednost</td></tr>
+          <tr><td>WordPress 6.2 — verzija iz 2023.</td><td>ceo sajt</td><td>mesec 1, uz rezervnu kopiju</td></tr>
+          <tr><td>Stranice bez ijednog unutrašnjeg linka</td><td class="n">6 stranica</td><td>uz unutrašnje povezivanje</td></tr>
+          <tr><td>Nedostaje ili je pogrešan canonical</td><td class="n">4 stranice</td><td>mesec 1</td></tr>
+          <tr><td>Skoro identičan sadržaj na više stranica</td><td class="n">15 stranica</td><td>mesec 2</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="t-note">Security headers nisu SEO faktor i nećemo se praviti da jesu. Navodimo ih zato što firma koja prodaje bezbednost ima sajt bez njih, a to je pitanje koje može da postavi informisan klijent.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="sec-n">05</span>
+      <h2>492 domena linkuju na vas, a niste ih zvali</h2>
+    </div>
+    <p>Ahrefs beleži 516 linkova sa 492 različita domena. Zvuči dobro dok se ne pogleda ko su. Primeri tekstova kojima linkuju na beogard.rs:</p>
+    <div class="spam">
+      <ol>
+        <li><b>„High Quality Dofollow Backlinks DA 50 PA 40 Premium PBN Network Service beogard.rs Rank First Page Google Fast SEO Link Building Buy Backlinks Online Cheap“</b></li>
+        <li><b>„beogard.rs — white-label link building for agency owners in the GCC“</b></li>
+        <li><b>„Back when I first launched beogard.rs, every month felt like an uphill battle…“</b> — isti tekst sa desetina domena tipa <span class="mono">37486430.xyz</span>, <span class="mono">luxury-outrank-hq-crew.store</span></li>
+      </ol>
+      <p class="note">To su PBN mreže i lažne preporuke. Neko je beogard.rs ubacio u svoj spam sistem kao primer, ili je u nekom trenutku kupljen paket linkova. Domain Rating je zato 0,6 od 100 — Ahrefs ove domene praktično ne računa.</p>
+    </div>
+    <p>Šta radimo: pravimo disavow fajl i prijavljujemo ga Google-u, pa gradimo linkove koji za lokalnu firmu stvarno rade — Google Business Profile, Planplus i 011info, stranice distributera opreme koju ugrađujete (Paradox, Hikvision, Dahua), lokalni poslovni imenici, i reference sa objekata gde ste radili. To nije efektno, ali je jedino što u Srbiji daje rezultat bez rizika.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="sec-n">06</span>
+      <h2>Gde ste u odnosu na konkurenciju</h2>
+      <p class="sub">Četiri firme koje se u Beogradu pojavljuju na iste pretrage. Nisu najveće — ali su bolje postavljene na internetu od vas.</p>
+    </div>
+    <div class="tw">
+      <table>
+        <caption>Stanje sajtova na dan 2. novembra 2026. <span>Proveravamo ponovo u prvoj nedelji rada, jer se ovi podaci menjaju.</span></caption>
+        <thead>
+          <tr><th>&nbsp;</th><th class="us">beogard.rs</th><th>AdAstra Security</th><th>Spartan sistemi</th><th>Protekta</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>Stranica usluga</th><td class="n good">14</td><td class="n">5</td><td>12, i još 4 po tipu objekta</td><td class="n">9</td></tr>
+          <tr><th>Cene na sajtu</th><td class="bad">ne, samo PDF za skidanje</td><td>paketi</td><td class="good">da, orijentacione u dinarima</td><td>ne</td></tr>
+          <tr><th>Tekstovi i članci</th><td class="bad">ne — samo spam</td><td>6 članaka</td><td>ne</td><td>ne</td></tr>
+          <tr><th>Pitanja i odgovori</th><td class="bad">ne</td><td>ne</td><td class="good">9 pitanja</td><td>ne</td></tr>
+          <tr><th>Stranice po gradovima i opštinama</th><td class="bad">ne</td><td>ne</td><td class="good">6</td><td>ne</td></tr>
+          <tr><th>Telefon vidljiv u zaglavlju</th><td class="bad">ne</td><td class="good">da</td><td class="good">da</td><td class="good">da</td></tr>
+          <tr><th>Forma za upit</th><td>da, osnovna</td><td class="good">da, sa izborom usluge</td><td>preko stranice kontakt</td><td>ne, samo telefon</td></tr>
+          <tr><th>Garancija navedena</th><td class="bad">ne</td><td>24 meseca</td><td>24 mes. oprema, 12 rad</td><td>intervencija 24 h</td></tr>
+          <tr><th>Brojevi koji grade poverenje</th><td>od 2003. i 5 licenci — ali sakriveno u pasusu</td><td>20+ godina, 1.000+ ugradnji, odziv 2 h</td><td>besplatan izlazak na procenu</td><td>logotipi brendova</td></tr>
+          <tr><th>Spam stranica u indeksu</th><td class="n bad">1.461</td><td class="n good">0</td><td class="n good">0</td><td class="n good">0</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="t-note">Dobra vest je u prvom redu tabele. Imate najviše stranica usluga od svih. Loša je u poslednjem.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="sec-n">07</span>
+      <h2>Šta dobijate za 400 € mesečno</h2>
+      <p class="sub">Sve navedeno ulazi u cenu. Nema posebnog računa za programera, za tekstove ni za izradu novih stranica.</p>
+    </div>
+
+    <div class="inc">
+      <div>
+        <h4>Izmene na sajtu</h4>
+        <ul>
+          <li>Brisanje 1.461 spam stranice i zatvaranje izvora</li>
+          <li>Naslovi i meta opisi za sve stranice</li>
+          <li>Brzina, keš, ispravke u temi i kodu</li>
+          <li>Oznake za Google: LocalBusiness, Service, FAQ</li>
+          <li>Open Graph, canonical, alt opisi, security headers</li>
+          <li>Nadogradnja WordPressa uz rezervnu kopiju</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Tekstovi i nove stranice</h4>
+        <ul>
+          <li>Prepisujemo svih 14 stranica usluga</li>
+          <li>Cenovnik kao stranica, ne kao PDF</li>
+          <li>Stranice po opštinama: Zemun, Novi Beograd, Zvezdara, Čukarica, Vračar</li>
+          <li>Stranice po opremi: Paradox, Hikvision, Dahua, Ajax, Commax</li>
+          <li>Pitanja i odgovori</li>
+          <li>Baza znanja na osnovu uputstava koja već imate</li>
+          <li>4 do 6 novih ili prepisanih stranica svakog meseca</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Lokalno i van sajta</h4>
+        <ul>
+          <li>Google Business Profile: postavljanje, fotografije, usluge, objave</li>
+          <li>Rad na ocenama i izjavama klijenata</li>
+          <li>Disavow fajl za 492 spam domena</li>
+          <li>Lokalni imenici i stranice distributera</li>
+          <li>Praćenje konkurencije</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Merenje i izveštaj</h4>
+        <ul>
+          <li>Search Console i Analytics — postavljanje i provera</li>
+          <li>Praćenje poziva i upita sa sajta</li>
+          <li>Jedan izveštaj mesečno: šta je urađeno, šta se promenilo, šta je sledeće</li>
+          <li>Razgovor jednom mesečno ako želite</li>
+        </ul>
+      </div>
+    </div>
+    <p class="t-note">Tekstove piše čovek koji piše na srpskom. Bez mašinskog prevoda. Sve što izlazi na sajt pročitate pre objave, ako tako želite.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="sec-n">08</span>
+      <h2>Zašto 400, a ne 300 ili 500</h2>
+      <p class="sub">Cena zavisi od četiri stvari, ne od pogađanja. Ovo je naša mreža i gde u njoj stojite.</p>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Od čega zavisi</th><th>300 € / mes.</th><th class="us">400 € / mes. — vaš slučaj</th><th>500 € / mes.</th></tr></thead>
+        <tbody>
+          <tr><th>Veličina sajta</th><td>do 20 stranica</td><td class="us">1.491 stranica za čišćenje, 30 za rad</td><td>katalog ili prodavnica</td></tr>
+          <tr><th>Izmene u kodu</th><td>nisu potrebne ili ih radi vaš programer</td><td class="us">potrebne, naš programer, u ceni</td><td>potrebne, stalno</td></tr>
+          <tr><th>Novih stranica mesečno</th><td class="n">2–3</td><td class="n us">4–6</td><td class="n">8–12</td></tr>
+          <tr><th>Prodavnica</th><td>nema</td><td class="us">nema</td><td>ima</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="t-note">Kod vas je gore od srednjeg slučaja po količini posla u prvom mesecu i srednje po svemu ostalom. Zato 400, i zato prvi mesec izgleda drugačije od ostalih jedanaest.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="sec-n">09</span>
+      <h2>Da li se isplati</h2>
+      <p class="sub">Jedino pitanje koje zaista odlučuje. Brojevi ispod su procena sa tržišta — zamenite ih svojima i preračunaćemo.</p>
+    </div>
+
+    <div class="pan">
+      <p class="big">2 posla mesečno<small>Toliko novih poslova pokriva 400 € i vraća ulog. Treći je zarada.</small></p>
+    </div>
+
+    <div class="tw">
+      <table>
+        <caption>Računica <span>Osnova: orijentacione cene sa sajtova beogradskih konkurenata — alarmni sistem od 80.000 din, video nadzor od 80.000 din, interfon od 35.000 din.</span></caption>
+        <tbody>
+          <tr><th>Prosečan posao kod privatnog korisnika</th><td class="n">oko 600 €</td></tr>
+          <tr><th>Marža, procena</th><td class="n">35% — oko 210 € po poslu</td></tr>
+          <tr><th>Mesečno ulaganje</th><td class="n">400 €</td></tr>
+          <tr><th>Tačka pokrića</th><td class="n">2 nova posla mesečno</td></tr>
+          <tr><th>Poslovni objekat, jedan posao</th><td class="n">2.000 € i više — pokriva tri do pet meseci rada</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="t-note">Ako je vaš prosečan posao 350 € ili 1.200 €, računica se menja i to je bitno znati pre nego što potpišete bilo šta. Pošaljite svoj prosek i maržu, vratimo preračun istog dana.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="sec-n">10</span>
+      <h2>Plan po mesecima</h2>
+    </div>
+    <ol class="plan">
+      <li>
+        <h3>Čišćenje i tehnika</h3>
+        <span class="when">mesec 1</span>
+        <p>Brišemo 1.461 spam stranicu i zatvaramo izvor. Čistimo bazu, novi sitemap, zahtev za ponovno obilaženje. Disavow za 492 domena. Brzina i keš. Postavljamo Search Console, Analytics i Google Business Profile. Na kraju meseca prvi put vidimo pravo stanje sajta u Google-u.</p>
+      </li>
+      <li>
+        <h3>Stranice usluga</h3>
+        <span class="when">meseci 2–3</span>
+        <p>Prepisujemo svih 14 stranica usluga: oprema, tipovi objekata, rokovi, garancija, cene, slike sa opisima. Cenovnik prelazi u stranicu. Pitanja i odgovori. Licence i godine rada izlaze na vidno mesto. Oznake za Google.</p>
+      </li>
+      <li>
+        <h3>Širenje i lokalno</h3>
+        <span class="when">meseci 4–6</span>
+        <p>Stranice po opštinama i po opremi. Baza znanja na osnovu uputstava koja već imate — Paradox, Dahua, šifre, servisni intervali. Rad na ocenama na Google-u. Prvi lokalni linkovi.</p>
+      </li>
+      <li>
+        <h3>Rast i pretvaranje poseta u pozive</h3>
+        <span class="when">meseci 7–12</span>
+        <p>Nove teme na osnovu toga šta ljudi stvarno traže — to znamo tek kad Search Console sakupi podatke. Doterivanje stranica koje donose upite. Linkovi. Mesečno 4 do 6 novih stranica se nastavlja.</p>
+      </li>
+    </ol>
+
+    <div class="pan" style="margin-top:28px">
+      <h3>O prognozi saobraćaja</h3>
+      <p>Nećemo vam dati tabelu sa „400 do 700 poseta u dvanaestom mesecu“. Nemamo pristup vašoj Search Console-i, pa bi svaki takav broj bio izmišljen — a izmišljene prognoze su razlog zbog kojeg ljudi prestanu da veruju SEO firmama.</p>
+      <p>Prognozu dobijate u drugoj nedelji rada, kad vidimo prave podatke: koliko poseta sajt sada ima, na koje pretrage se pojavljuje i koliko ljudi u Beogradu mesečno traži vaše usluge. Tada je to procena sa osnovom, a ne obećanje.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="sec-n">11</span>
+      <h2>Uslovi</h2>
+      <p class="sub">Ovo su pitanja koja ćete svakako postaviti, pa stoje u dokumentu.</p>
+    </div>
+    <ul class="terms">
+      <li><b>Cena</b><span>400 € mesečno. Plaća se na početku meseca. Prvi mesec možemo podeliti na dva dela ako vam tako lakše.</span></li>
+      <li><b>Ugovor</b><span>Bez vezivanja na period. Otkaz najavljen 30 dana unapred, bez penala.</span></li>
+      <li><b>Račun</b><span>Račun dobijate svakog meseca.</span></li>
+      <li><b>Šta je u ceni</b><span>Sve izmene na sajtu, svi tekstovi, nove stranice, Google Business Profile, izveštaj. Programer je naš.</span></li>
+      <li><b>Šta nije u ceni</b><span>Plaćeno postavljanje linkova. Ako ga predložimo, to je do 50 € mesečno, odvojeno od honorara i samo uz vaše pisano odobrenje. Bez odobrenja se ne troši ni dinar.</span></li>
+      <li><b>Hosting i domen</b><span>Ostaju vaši i na vaše ime. Ne prebacujemo sajt nikuda.</span></li>
+      <li><b>Šta nam treba</b><span>WordPress admin, Search Console, Google Analytics, Google Business Profile, pristup hostingu. Ako nešto od toga ne postoji, napravićemo i ostaje na vaše ime.</span></li>
+      <li><b>Odobravanje</b><span>Svaki tekst pre objave možete da pročitate i tražite izmenu. Ako nemate vremena, objavljujemo i javljamo šta je izašlo.</span></li>
+      <li><b>Ko radi</b><span>Mali tim. Jedna osoba vodi projekat i radi SEO, jedna piše tekstove na srpskom, jedna radi izmene u kodu. Ne prodajemo vam odeljenje od deset ljudi.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="sec-n">12</span>
+      <h2>Sa kim radimo</h2>
+    </div>
+    <p>Male i srednje firme u Srbiji: vodoinstalaterska firma, bravarija, šlep služba, psihološko savetovanje, prodavnica građevinskog materijala, agencija za nekretnine, dom za stare. Svi sajtovi na srpskom, svi tekstovi pisani, ne prevedeni.</p>
+    <p>Ne stavljamo u ovaj dokument brojeve rasta tuđih klijenata, jer ih ne možemo dokazati vama na papiru. Ako hoćete da pitate nekoga od njih kako radimo — dogovorimo, dobićete kontakt.</p>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Sledeći korak je jedan razgovor od pola sata</h2>
+    <p>Na njemu prolazimo kroz plan čišćenja spama, proverimo vaš prosečan posao i maržu i preračunamo isplativost sa vašim brojevima. Posle toga odlučujete.</p>
+    <div class="need">
+      <p>Da bismo počeli, treba nam samo dve stvari: pristup WordPress adminu i Search Console-i. Ostalo možemo i bez vas.</p>
+    </div>
+    <div class="contacts">
+      <a href="mailto:temsem2003@gmail.com">temsem2003@gmail.com</a>
+      <a href="https://t.me/Kkiriiiii">Telegram: @Kkiriiiii</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>Kako je ova provera napravljena.</b> Obilaženje svih 1.491 stranice sajta i provera tehničkih grešaka — <b>Parsi</b>, naš alat za obilaženje sajtova. Profil linkova — <b>Ahrefs</b>. Ručna provera stranica usluga, stranice kontakt i cenovnika, i četiri konkurentska sajta: adastrasecurity.rs, spartansistemi.rs, protekta.co.rs, cctv.org.rs.</p>
+    <p>Podaci o sajtu i konkurenciji su na dan <b>2. novembra 2026.</b> Brojevi konkurenata se menjaju i ponovo ih proveravamo u prvoj nedelji rada.</p>
+  </div>
+</footer>
+
+</body>
+</html>
